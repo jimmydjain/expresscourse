@@ -35,8 +35,8 @@ response.json().then((data)=>{
         else
         {
             messageone.textContent = 'Lattitude = ' +data.lattitude +  '  Longitude' +data.longitude 
-            messagetwo.textContent = ' Place Name = ' +  data.place_name + '  Temperature is ' +   data.precip.temperature + ' Precip' + data.precip.precip
-            console.log(data)
+            messagetwo.textContent = ' Place Name = ' +  data.place_name + '  Temperature is ' +   data.precip.temperature + ' Precip' + data.precip.precip +  '  Humidity is ' + data.precip.humidity
+            console.log('Troubleshooting' +data)
         }
 
 })

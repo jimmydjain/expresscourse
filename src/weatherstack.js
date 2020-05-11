@@ -15,7 +15,7 @@ const weatherstack = (lattitude , longitude , callback) =>
         }
         else
         (
-            callback(undefined , { temperature :response.body.current.temperature , precip : response.body.current.precip})
+            callback(undefined , { temperature :response.body.current.temperature , precip : response.body.current.precip , humidity: response.body.current.humidity})
         )
 
 

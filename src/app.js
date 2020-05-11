@@ -88,13 +88,14 @@ app.get('/weatherInfo' , (req , resp)=>{
             return resp.send('cannot connect to GeoLocation API')
         }
         else{
-            weatherstack.weatherstack(lattitude , longitude , (temperature , precip)=>{
+            weatherstack.weatherstack(lattitude , longitude , (temperature , precip , humidity)=>{
                 return resp.send({
                     lattitude : lattitude,
                     longitude : longitude,
                     place_name : place_name,
                     temperature : temperature,
-                    precip : precip
+                    precip : precip,
+                    humidity : humidity
                 })
             })
 
