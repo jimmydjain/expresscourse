@@ -37,7 +37,7 @@ response.json().then((data)=>{
             messageone.textContent = 'Lattitude = ' +data.lattitude +  '  Longitude' +data.longitude 
             messagetwo.textContent = ' Place Name = ' +  data.place_name + '  Temperature is ' +   data.precip.temperature + ' Precip' + data.precip.precip +  '  Humidity is ' + data.precip.humidity
             console.log('Troubleshooting' +data)
-        }
+        } 
 
 })
 })
