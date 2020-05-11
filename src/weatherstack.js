@@ -1,4 +1,4 @@
-const request = require('postman-Request')
+const request = require('postman-request')
 const chalk = require('chalk')
 
 
