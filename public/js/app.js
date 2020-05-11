@@ -23,8 +23,8 @@ weatherform.addEventListener('submit',(e)=>{
     console.log('Address Entered is ' +address.value)
 
     
-fetch('http://localhost:3000/weatherInfo?address='+address.value).then((response)=>{
-
+// fetch('http://localhost:3000/weatherInfo?address='+address.value).then((response)=>{
+    fetch('/weatherInfo?address='+address.value).then((response)=>{
 response.json().then((data)=>{
     if(data.error)
         {
